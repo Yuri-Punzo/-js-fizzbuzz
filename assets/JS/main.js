@@ -16,32 +16,25 @@ BONUS 2:
 Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda che il valore inserito sia un numero, un fizz, un buzz o un fizzbuzz. Se sei a corto di idee per lo stile, potresti prendere spunto dallo screenshot fornito in consegna. */
 
 
-
+const ul = document.querySelector('ul.list');
 
 for (let i = 1; i <= 100; i++) {   /* scrivo i 100 numeri */
+    const li = document.createElement('li');
     if (((i % 3) == 0) && ((i % 5) == 0)) {           /* MINIMO COMUNE MULTIPLO 3 e 5 va messo in cima o poi non viene considerato perché avrebbe già assegnato i Fizz o i Buzz sopra ai numeri FizzBuzz*/
-        const ul = document.querySelector('ul.list');
-        const li = document.createElement('li');
         li.append("FizzBuzz");
-        ul.append.li;
+        ul.append(li);
         console.log("FizzBuzz");
     } else if ((i % 3) == 0) {     /* check per divisibilità per 3 */
-        const ul = document.querySelector('ul.list');
-        const li = document.createElement('li');
         li.append("Fizz");
-        ul.append.li;
+        ul.append(li);
         console.log("Fizz");
     } else if ((i % 5) == 0) {     /* check per divisibilità per 5 */
-        const ul = document.querySelector('ul.list');
-        const li = document.createElement('li');
         li.append("Buzz");
-        ul.append.li;
+        ul.append(li);
         console.log("Buzz");
     } else {                       /* se non é multiplo di 3 o di 5 rimane numero normale */
-    const ul = document.querySelector('ul.list');
-        const li = document.createElement('li');
         li.append(i);
-        ul.append.li;
+        ul.append(li);
         console.log(i);
     }
 
