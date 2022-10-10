@@ -18,15 +18,14 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
 
 
 
-for (let i = 1; i <= 100; i++) { /* scrivo i 100 numeri */
-
-if ((i % 15) == 0) {           /* MINIMO COMUNE MULTIPLO 3 e 5 va messo in cima o poi non viene considerato perché avrebbe già assegnato i Fizz o i Buzz sopra ai numeri FizzBuzz*/
-    console.log("FizzBuzz");
-} else if ((i % 3) == 0) {     /* check per divisibilità per 3 */
-    console.log("Fizz")
-} else if ((i % 5) == 0) {     /* check per divisibilità per 5 */
-    console.log("Buzz");
-} else {                       /* se non é multiplo di 3 o di 5 rimane numero normale */
-    console.log(i);
-}
+for (let i = 1; i <= 100; i++) {   /* scrivo i 100 numeri */
+    if ((i % 15) == 0) {           /* MINIMO COMUNE MULTIPLO 3 e 5 va messo in cima o poi non viene considerato perché avrebbe già assegnato i Fizz o i Buzz sopra ai numeri FizzBuzz*/
+        console.log("FizzBuzz");
+    } else if ((i % 3) == 0) {     /* check per divisibilità per 3 */
+        console.log("Fizz")
+    } else if ((i % 5) == 0) {     /* check per divisibilità per 5 */
+        console.log("Buzz");
+    } else {                       /* se non é multiplo di 3 o di 5 rimane numero normale */
+        console.log(i);
+    }
 }
