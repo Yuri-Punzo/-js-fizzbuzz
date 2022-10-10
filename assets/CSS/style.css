@@ -2,3 +2,17 @@ li {
     margin: 1rem;
     list-style-type: none
 }
+
+.square {
+    width: 70px;
+    height: 70px;
+}
+
+.bonus {
+    background-color: indigo;
+    color: white;
+}
+
+.container_2 {
+    width: 60%;
+}
