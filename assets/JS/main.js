@@ -19,25 +19,29 @@ Applica stili differenti agli elementi aggiunti al DOM nel BONUS 1, a seconda ch
 
 
 for (let i = 1; i <= 100; i++) {   /* scrivo i 100 numeri */
-    if ((i % 15) == 0) {           /* MINIMO COMUNE MULTIPLO 3 e 5 va messo in cima o poi non viene considerato perché avrebbe già assegnato i Fizz o i Buzz sopra ai numeri FizzBuzz*/
-        const ul = document.querySelector(".list")
-        const FizzBuzz = `<li class=box box_FizzBuzz>FizzBuzz</li>`;
-        ul.innerHTML += FizzBuzz;
+    if (((i % 3) == 0) && ((i % 5) == 0)) {           /* MINIMO COMUNE MULTIPLO 3 e 5 va messo in cima o poi non viene considerato perché avrebbe già assegnato i Fizz o i Buzz sopra ai numeri FizzBuzz*/
+        const ul = document.querySelector('ul.list');
+        const li = document.createElement('li');
+        li.append("FizzBuzz");
+        ul.append.li;
         console.log("FizzBuzz");
     } else if ((i % 3) == 0) {     /* check per divisibilità per 3 */
-        const ul = document.querySelector(".list")
-        const Fizz = `<li class=box box_Fizz>Fizz</li>`;
-        ul.innerHTML += Fizz;
+        const ul = document.querySelector('ul.list');
+        const li = document.createElement('li');
+        li.append("Fizz");
+        ul.append.li;
         console.log("Fizz");
     } else if ((i % 5) == 0) {     /* check per divisibilità per 5 */
-        const ul = document.querySelector(".list")
-        const Buzz = `<li class=box box_Buzz>Buzz</li>`;
-        ul.innerHTML += Buzz;
+        const ul = document.querySelector('ul.list');
+        const li = document.createElement('li');
+        li.append("Buzz");
+        ul.append.li;
         console.log("Buzz");
     } else {                       /* se non é multiplo di 3 o di 5 rimane numero normale */
-        const ul = document.querySelector(".list")
-        i = `<li class=box box_${i}>${i}</li>`;
-        ul.innerHTML += i;
+    const ul = document.querySelector('ul.list');
+        const li = document.createElement('li');
+        li.append(i);
+        ul.append.li;
         console.log(i);
     }
 
