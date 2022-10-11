@@ -44,24 +44,18 @@ let x = document.querySelector(".container_2")
 
 for (let i = 1; i <= 100; i++) {
     let y = document.createElement("div")
-    
+    x.append(y)
     if (((i % 3) == 0) && ((i % 5) == 0)) {
-        y.className = "square bg-danger d-flex align-items-center justify-content-center m-2"
-        x.append(y)
+        y.className = "square bg-danger d-flex align-items-center justify-content-center m-2"        
         y.append("FizzBuzz")
     } else if ((i % 3) == 0) {
-        y.className = "square bg-success d-flex align-items-center justify-content-center m-2"
-        x.append(y)
+        y.className = "square bg-success d-flex align-items-center justify-content-center m-2"        
         y.append("Fizz")
     } else if ((i % 5) == 0) {
-        y.className = "square bg-secondary d-flex align-items-center justify-content-center m-2"
-        x.append(y)
+        y.className = "square bg-secondary d-flex align-items-center justify-content-center m-2"        
         y.append("Buzz")
     } else {
-        y.className = "square bg-primary d-flex align-items-center justify-content-center m-2"
-        x.append(y)
+        y.className = "square bg-primary d-flex align-items-center justify-content-center m-2"        
         y.append(i)
-    }
-
-
+    }   
 }
